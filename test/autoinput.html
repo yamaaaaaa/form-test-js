@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>autoInput | form-test-js</title>
+	<meta name="viewport" content="width=device-width">
+</head>
+<body>
+
+<h1>Test:autoInput()</h1>
+
+<h2>Text</h2>
+<input type="text" name="input_text">
+
+<h2>Password</h2>
+<input type="password" name="input_password">
+
+<h2>TextArea</h2>
+<textarea name="input_textarea"></textarea>
+
+<h2>Radio</h2>
+<input type="radio" name="input_radio" value="male">Male<br>
+<input type="radio" name="input_radio" value="female">Female
+
+<h2>CheckBox</h2>
+<input type="checkbox" name="input_check[]" value="baseball">BaseBall<br>
+<input type="checkbox" name="input_check[]" value="succer">Succer<br>
+<input type="checkbox" name="input_check[]" value="basketball">BasketBall
+
+<h2>Select</h2>
+<select name="input_select">
+	<option value="engineer">Engineer</option>
+	<option value="designer">Designer</option>
+	<option value="director">Director</option>
+</select>
+
+
+
+<script type="module">
+  import {FormTest} from "../src/FormTest.js";
+
+  var formTest = new FormTest();
+  formTest.autoInput({
+    "input_text":"Yamaaa",
+    "input_password":"asdfasdf00",
+    "input_textarea":"だみーてきすとです。\nだみーてきすとです。",
+    "input_radio":"male",
+    "input_check[]":['succer','baseball'],
+    "input_select":['engineer']
+  });
+
+  
+</script>
+
+
+
+</body>
+</html>
