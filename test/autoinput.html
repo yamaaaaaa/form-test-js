@@ -23,6 +23,7 @@
 <input type="radio" name="input_radio" value="female">Female
 
 <h2>CheckBox</h2>
+<input type="hidden" name="input_check[]" value="">
 <input type="checkbox" name="input_check[]" value="baseball">BaseBall<br>
 <input type="checkbox" name="input_check[]" value="succer">Succer<br>
 <input type="checkbox" name="input_check[]" value="basketball">BasketBall
@@ -35,23 +36,21 @@
 </select>
 
 
-
 <script type="module">
   import {FormTest} from "../src/FormTest.js";
 
   var formTest = new FormTest();
   formTest.autoInput({
-    "input_text":"Yamaaa",
-    "input_password":"asdfasdf00",
-    "input_textarea":"だみーてきすとです。\nだみーてきすとです。",
-    "input_radio":"male",
-    "input_check[]":['succer','baseball'],
-    "input_select":['engineer']
+    "input_text": "Yamaaa",
+    "input_password": "asdfasdf00",
+    "input_textarea": "だみーてきすとです。\nだみーてきすとです。",
+    "input_radio": "male",
+    "input_check[]": ['succer', 'baseball'],
+    "input_select": ['engineer']
   });
 
-  
-</script>
 
+</script>
 
 
 </body>
