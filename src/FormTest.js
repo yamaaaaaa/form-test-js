@@ -34,6 +34,7 @@ export class FormTest {
 
         switch (type) {
           case 'text':
+          case 'email':
           case 'password':
             inputType = 'normal';
             break;
